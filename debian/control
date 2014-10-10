@@ -1,5 +1,5 @@
 Source: device-udoo
-Section: unknown
+Section: embedded
 Priority: extra
 Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
@@ -7,6 +7,24 @@ Standards-Version: 3.9.3
 
 Package: device-udoo
 Architecture: all
-Depends: ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
+Depends:
+ board-udoo,
+ baseconfig-ptux,
+ ptux-essential,
+ systemd-sysv,
+ dpkg-autoconfigure-at-boot,
+ vim-tiny,
+ procps,
+ wget,
+ module-init-tools,
+ accounts-root-password,
+ connman-run,
+ openssh-client,
+ openssh-server,
+ iproute,
+ iputils-ping,
+ apt-transport-https,
+ apt-source-ptux-device,
+ ${misc:Depends}
